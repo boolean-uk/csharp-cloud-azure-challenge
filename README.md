@@ -57,9 +57,13 @@ Below is a **_guide_** of the application parts. You can change within reason an
 - Each product has a stock level stored in the company database. When a product is added to the basket, the stock level should be checked. If the stock level is 0, the product should not be able to be added to the basket. On order, the stock level should reduce accordingly.
 -
 
-## Super Extension
+## Super Extensions
 
 - Dockerize the application with Docker compose for anything you feel can be containerized
+
+## Super Trooper Extension
+
+- JWT token authentication
 
 ## Notes
 
