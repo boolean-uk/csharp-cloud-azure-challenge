@@ -31,7 +31,7 @@ Below is a **_guide_** of the application parts. You can change within reason an
 - Customer can view their orders, cancel order, amend order and see order history
 - Customer can update their address
 
-#### Admin Front End
+#### Company Front End
 
 - Employee has a front end in either React or Angular
 - Employee can view customer orders
@@ -42,9 +42,9 @@ Below is a **_guide_** of the application parts. You can change within reason an
 
 - Process orders from Azure (Azurite) through the Company API to a company database (could be a postgres container, in memory, neon etc)
 
-#### API for Products
+#### Company API for Products
 
-- This can be a simple API that returns a list of products. Could be merged with the Company API or kept serparate
+- This can be a simple API that returns a list of products. Could be merged with the Company API or kept serparate. Could be [fakestore api](https://fakestoreapi.com/products), something similar or make your own
 
 #### Design Overview
 
@@ -55,6 +55,7 @@ Below is a **_guide_** of the application parts. You can change within reason an
 ## Extensions
 
 - Each product has a stock level stored in the company database. When a product is added to the basket, the stock level should be checked. If the stock level is 0, the product should not be able to be added to the basket. On order, the stock level should reduce accordingly.
+-
 
 ## Super Extension
 
